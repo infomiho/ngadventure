@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form ng-submit="logIn()" novalidate name="loginForm">
+                    <div class="alert alert-danger" ng-show="loginForm.$invalid && !loginForm.$pristine">
+
+                        Morate ispravno unjeti email i password
+
+                    </div>
+                    <a class="btn btn-default btn-block btn large btn-facebook" href="#/login"><i class="fa fa-facebook"></i> Prijavi se putem Facebooka</a>
+                    <div class="separator"></div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Vaš E-mail" ng-model="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Vaš Password" ng-model="password" required>
+                        <p class="forgot-pw"><a href="#/login">Zaboravio sam password. </a></p>
+                    </div>
+                    <input type="submit" class="btn btn-block btn-large btn-primary" value="Peek in"/>
+                    <p class="register-callout">Nemaš račun? <a href="#/login">Registriraj se!</a></p>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>

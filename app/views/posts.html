@@ -1,0 +1,9 @@
+<div class="list-group">
+    <div href="#" class="list-group-item" ng-repeat="post in posts" style="background-image: url({{ post.image }})" ng-click="blogItem(post.id)">
+        <img ng-hide="true" alt="{{ post.title }}"/>
+        <div class="overlay">
+        <h4 class="list-group-item-heading">{{ post.title }}</h4>
+        <p class="list-group-item-text">{{ post.text | limitTo:50 }}...</p>
+        </div>
+    </div>
+</div>
